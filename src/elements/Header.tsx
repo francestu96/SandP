@@ -1,5 +1,5 @@
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Flex, HStack, IconButton, VStack, useDisclosure, Text, Slide } from '@chakra-ui/react';
+import { Box, Flex, HStack, IconButton, VStack, useDisclosure, Text, Slide, Link, Image } from '@chakra-ui/react';
 import React from 'react';
 import { ISubNav } from './SubNav';
 ;
@@ -54,9 +54,9 @@ const Header = () => {
 
 
       <Slide in={isOpen} transition={{"enter": {duration: 0.5}, "exit": {duration: 0.5}}} style={{ zIndex: 10 }}>
-        <Flex w='100vw' h="100vh" flexDir="column">
+        <Flex w='100vw' h="100vh" flexDir="column" backgroundColor="white">
           <Flex justify="flex-end">
-          <IconButton mt={2} mr={2} aria-label="Open Menu" size="lg" icon={<CloseIcon/>}onClick={onToggle}/>
+          <IconButton mt={2} mr={2} aria-label="Open Menu" size="lg" icon={<CloseIcon/>} onClick={onToggle}/>
         </Flex>
           <VStack gap={'15px'}>
             {NAV_LINKS.map((link) => (
@@ -64,6 +64,9 @@ const Header = () => {
             ))}
           </VStack>
         </Flex>   
+        <Link href="https://api.whatsapp.com/send?phone=393890298500" target="_blank">
+          <Image src="/whatsapp-button.png" position="fixed" bottom="15px" right="15px" alt="wp-logo"/>
+        </Link>
       </Slide> 
     </Box>
   );
