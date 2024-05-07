@@ -8,7 +8,6 @@ import {
   Stack,
   Container,
   Avatar,
-  useColorModeValue,
 } from '@chakra-ui/react';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -18,7 +17,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+      bg="gray.100"
       boxShadow={'lg'}
       p={8}
       rounded={'xl'}
@@ -34,7 +33,6 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
         borderRightWidth: 16,
         borderTop: 'solid',
         borderTopWidth: 16,
-        borderTopColor: useColorModeValue('white', 'gray.800'),
         pos: 'absolute',
         bottom: '-16px',
         left: '50%',
@@ -57,7 +55,7 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
     <Text
       textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
+      color="gray.600"
       fontSize={'sm'}>
       {children}
     </Text>
@@ -78,7 +76,7 @@ const TestimonialAvatar = ({
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
+        <Text fontSize={'sm'} color="gray.600">
           {title}
         </Text>
       </Stack>
@@ -88,58 +86,58 @@ const TestimonialAvatar = ({
 
 export default function Testimonials() {
   return (
-    <Box bg={useColorModeValue('white', 'gray.700')}>
+    <Box>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading color='main'>Our Clients Speak</Heading>
-          <Text>We have been working with clients around the world</Text>
+          <Heading color='main'>Cosa dicono di noi</Heading>
+          <Text>Leggi il parere di qualche nostro cliente, grazie ancora!</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Game Changing</TestimonialHeading>
+              <TestimonialHeading>Lorem ipsum</TestimonialHeading>
               <TestimonialText>
-                I&apos;ve been involved in the crypto trading industry for years, and I can honestly say that Ouroboros is a game-changer, moreover after the big CEX crush of these years!
+                Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
                 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
               }
-              name={'Jurica Koletic'}
-              title={'Day Trader'}
+              name={'Francesco Rosso'}
+              title={'Genova, Sturla'}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
+              <TestimonialHeading>Dolor sit amet</TestimonialHeading>
               <TestimonialText>
-                I have been using Ouroboros for a few months now, and I am blown away by its reliability and ease of use.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa'
               }
-              name={'Jane Cooper'}
-              title={'Day Trader'}
+              name={'Giorgia Levi'}
+              title={'Genova, Pegli'}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
+              <TestimonialHeading>Consectetur adipiscing</TestimonialHeading>
               <TestimonialText>
-                I was skeptical at first about using an automated trading platform, but uroborus exceeded my expectations.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices sodales leo at pharetra.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
                 'https://images.unsplash.com/photo-1534308143481-c55f00be8bd7'
               }
-              name={'Stephen Arnold'}
-              title={'Swing Trader'}
+              name={'Paolo Giambe'}
+              title={'Genova, Pontedecimo'}
             />
           </Testimonial>
         </Stack>

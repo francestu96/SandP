@@ -8,7 +8,6 @@ import {
   VisuallyHidden,
   Input,
   IconButton,
-  useColorModeValue,
   HStack,
   Tooltip,
 } from '@chakra-ui/react';
@@ -30,7 +29,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg="blackAlpha.100"
       rounded={'full'}
       w={8}
       h={8}
@@ -42,7 +41,7 @@ const SocialButton = ({
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: "blackAlpha.200",
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -60,12 +59,9 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export default function Footer() {
   return (
-    <Box
-      color={useColorModeValue('gray.700', 'gray.200')}>
+    <Box color="gray.700" borderTop="1px" borderTopColor="chakra-border-color">
       <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
-          spacing={8}>
+        <SimpleGrid templateColumns={{ sm: '1fr 1fr', md: '4fr 3fr 3fr 3fr' }} spacing={8}>
           <Stack spacing={6}>
             <HStack gap="3">
               <Logo/>
@@ -74,7 +70,7 @@ export default function Footer() {
                 </HStack>
             </HStack>
             <Text fontSize={'sm'}>
-              © 2024 Trading Angel. All rights reserved
+              © 2024 S&P Management. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Telegram'} href={""}>
@@ -86,19 +82,19 @@ export default function Footer() {
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={""}>Telegram</Link>
-            <Link href={""}>Twitter</Link>
+            <ListHeader>Contatti</ListHeader>
+            <Link href={""}>info@spmanagement.com</Link>
+            <Link href={""}>+39 389 0298 500</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Developer</ListHeader>
-            <Text>Powered By</Text>
-            <a href={'https://t.me/justinternetmoneyz'} target='_blank' style={{ color: "#3bb7ff" }} rel="noreferrer">Kira</a>
+            <ListHeader>Informazioni</ListHeader>
+            <Text>Via XX Settembre 20, GE</Text>
+            <Text>P.IVA 03763730102</Text>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Stay up to date</ListHeader>
+            <ListHeader>Rimani aggiornato</ListHeader>
             <Stack direction={'row'}>
-              <Input placeholder={'Your email address'} bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')} border={0} _focus={{ bg: 'whiteAlpha.300' }}/>
+              <Input placeholder={'Indirizzo email'} bg="blackAlpha.100" border={0} _focus={{ bg: 'whiteAlpha.300' }}/>
               <Tooltip label="coming soon!" hasArrow>
                 <IconButton bg="main" aria-label="Subscribe" cursor="not-allowed" icon={<BiMailSend />}/>
               </Tooltip>

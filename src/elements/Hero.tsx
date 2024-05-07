@@ -23,7 +23,7 @@ const Hero = () => {
                 </Button>
             </Stack>
             <Box className="animated-hero-border" w={["100%", "60%"]} display="flex" position="relative" justifyContent="end" clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)">
-                <Image className="animated-hero-img" w="99.2%" h="98%" src="hero-bg.png" alt='background' clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)" />
+                <Image className="animated-hero-img" w="99.2%" h="98%" src="hero-bg.png" alt='background' clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60.5%)" />
             </Box>
         </Stack>
     );
