@@ -7,10 +7,10 @@ import Logo from './Logo';
 import NavItem from './NavItem';
 
 const NAV_LINKS: ISubNav[] = [
-    { label: "Come operiamo", href: "/" },
-    { label: "Chi Siamo", href: "/" },
-    { label: "Contatti", href: "/" },
-    { label: "F.A.Q.", href: "/" },
+    { label: "Come Funziona", href: "/#howitworks" },
+    { label: "Chi Siamo", href: "/#about" },
+    { label: "I Nostri Numeri", href: "/#numbers" },
+    { label: "F.A.Q.", href: "/#faq" },
     {
       label: "Social",
       href: "#",
