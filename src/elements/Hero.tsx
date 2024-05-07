@@ -2,7 +2,7 @@ import { Text, Button, Heading, Stack, Image, Box } from '@chakra-ui/react';
 
 const Hero = () => {
     return (
-        <Stack minH={'91vh'} direction={{ base: 'column', md: 'row' }} width="100%" overflow="hidden" gap={["5", "0"]} backgroundImage="abstract.png" backgroundSize="cover" backgroundPosition="right" >
+        <Stack borderBottom="1px" borderBottomColor="chakra-border-color" minH={'91vh'} direction={{ base: 'column', md: 'row' }} width="100%" overflow="hidden" gap={["5", "0"]} backgroundImage="abstract.png" backgroundSize="cover" backgroundPosition="right" >
             <Stack px={["10", "15", "20", "40"]} py="10" gap={["5", "10"]} w={["100%", "40%"]} justifyContent="center" className="animated-hero-text">
                 <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                     <Text as={'span'}>
@@ -23,7 +23,7 @@ const Hero = () => {
                 </Button>
             </Stack>
             <Box className="animated-hero-border" w={["100%", "60%"]} display="flex" position="relative" justifyContent="end" clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)">
-                <Image className="animated-hero-img" w="99.1%" h="99%" src="hero-bg.png" alt='background' clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)" />
+                <Image className="animated-hero-img" w="99.2%" h="98%" src="hero-bg.png" alt='background' clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)" />
             </Box>
         </Stack>
     );
