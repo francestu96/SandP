@@ -41,7 +41,7 @@ const Numbers = () => {
                             <ChakraBox animate={isInView ? { translateX: [-200, 0], opacity: [0, 1] } : 'none'} transition={{ duration: "1.5", ease: "easeInOut", delay: "0.8" }} opacity="0">
                                 <VStack pl={["5", "10"]} pt={["5", "10"]}>
                                     <Text color="main" fontSize={["2xl", "4xl"]}>1</Text>
-                                    <Text color="gray.500" fontWeight="bold" fontSize="lg" fontFamily="CustomFont">Anni di business</Text>
+                                    <Text color="gray.500" fontWeight="bold" fontSize="lg" fontFamily="CustomFont">Anni di attivit<Text as="span" fontFamily="arial">à</Text></Text>
                                 </VStack>
                             </ChakraBox>
                         </SimpleGrid>

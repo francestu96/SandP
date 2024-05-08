@@ -17,14 +17,14 @@ const HowItWorks = () => {
                     <Text fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                         Come Funziona
                     </Text>
-                    <Stack direction={["column", "row"]} ref={ref}>
+                    <Stack direction={["column", "row"]} ref={ref} textAlign="center">
                         <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut"}} opacity="0">
                             <VStack p="10" borderColor="gray.700" borderRadius="2xl">
                                 <Image src="handshake.png" alt="img"/>
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Affidati a noi
                                 </Text>
-                                <Text textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.</Text>
+                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.</Text>
                             </VStack>
                         </ChakraBox>
                         <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "0.5"}} opacity="0">
@@ -33,7 +33,7 @@ const HowItWorks = () => {
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Sfrutta i tuoi immobili
                                 </Text>
-                                <Text textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
                             </VStack>
                         </ChakraBox>
                         <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "1"}} opacity="0">
@@ -42,7 +42,7 @@ const HowItWorks = () => {
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Nessun impegno da parte tua
                                 </Text>
-                                <Text textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum!</Text>
+                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum!</Text>
                             </VStack>
                         </ChakraBox>
                     </Stack>
