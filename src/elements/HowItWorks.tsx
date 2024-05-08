@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const HowItWorks = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const isInView = useInView(ref, { once: true });
 
     const ChakraBox = chakra(motion.div, {
         shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),

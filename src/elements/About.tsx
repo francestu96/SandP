@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const About = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const isInView = useInView(ref, { once: true });
 
     const ChakraBox = chakra(motion.div, {
         shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -17,9 +17,9 @@ const About = () => {
                     <Text fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                         Chi Siamo
                     </Text>
-                    <VStack ref={ref} gap="10">
-                        <ChakraBox animate={isInView ? { opacity: [0, 1], translateX: "150px" } : 'none'} transition={{ duration: "2", ease: "easeInOut"}} opacity="0">
-                            <Card boxShadow={'2xl'} backgroundColor="gray.100" mr="10vw" direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline' p="5" borderRadius="2xl">
+                    <VStack ref={ref} gap="10" overflowX="clip">
+                        <ChakraBox animate={isInView ? { opacity: [0, 1], translateX: ["150px", "0px"] } : 'none'} transition={{ duration: "2", ease: "easeInOut"}} opacity="0">
+                            <Card  boxShadow={'2xl'} backgroundColor="gray.100" mr={["0", "10vw"]} direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline' p="5" borderRadius="2xl">
                                 <Image objectFit='cover' w={{ base: '100%', sm: '200px' }} src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e' alt='Francesco' borderRadius="full"/>
 
                                 <Stack>
@@ -42,9 +42,11 @@ const About = () => {
                                 </Stack>
                             </Card>
                         </ChakraBox>
-                        <ChakraBox animate={isInView ? { opacity: [0, 1], translateX: "-150px" } : 'none'} transition={{ duration: "2", ease: "easeInOut", delay: "1"}} opacity="0">
-                            <Card boxShadow={'2xl'} backgroundColor="gray.100" ml="10vw" direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline' p="5" borderRadius="2xl">
-                                <Stack align="end" textAlign="end">
+                        <ChakraBox animate={isInView ? { opacity: [0, 1], translateX: ["-150px", "0px"] } : 'none'} transition={{ duration: "2", ease: "easeInOut", delay: "1"}} opacity="0">
+                            <Card boxShadow={'2xl'} backgroundColor="gray.100" ml={["0", "10vw"]} direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline' p="5" borderRadius="2xl">
+                                <Image objectFit='cover' display={["flex", "none"]} w="100%" src='https://images.unsplash.com/photo-1534308143481-c55f00be8bd7' alt='Francesco' borderRadius="full"/>
+                                
+                                <Stack align={["start", "end"]} textAlign={["start", "end"]}>
                                     <CardBody>
                                         <Heading size='md' color="main">Paolo</Heading>
 
@@ -62,7 +64,7 @@ const About = () => {
                                         </Button>
                                     </CardFooter>
                                 </Stack>
-                                <Image objectFit='cover' w={{ base: '100%', sm: '200px' }} src='https://images.unsplash.com/photo-1534308143481-c55f00be8bd7' alt='Francesco' borderRadius="full"/>
+                                <Image objectFit='cover' display={["none", "flex"]} w="200px" src='https://images.unsplash.com/photo-1534308143481-c55f00be8bd7' alt='Francesco' borderRadius="full"/>
                             </Card>
                         </ChakraBox>
                     </VStack>

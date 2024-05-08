@@ -13,7 +13,7 @@ const Hero = () => {
                         S<Text as={'span'} fontFamily="arial">&</Text>P Management
                     </Text>
                 </Heading>
-                <Text m="2" fontSize={{ base: 'md', lg: 'lg' }}>
+                <Text m="2" fontSize={["md", "lg"]}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem.<br/><br/>
                     Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.<br/><br/>
                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices sodales leo at pharetra.
@@ -23,7 +23,7 @@ const Hero = () => {
                 </Button>
             </Stack>
             <Box className="animated-hero-border" w={["100%", "60%"]} display="flex" position="relative" justifyContent="end" clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)">
-                <Image className="animated-hero-img" w="99.2%" h="98%" objectFit="cover" src="hero-bg.png" alt='background' clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60.5%)" />
+                <Image className="animated-hero-img" w="99.2%" h="98%" objectFit="cover" src="hero-bg.png" alt='background' clipPath={["polygon(0 0, 100% 0, 100% 96%, 0 57.5%)", "polygon(0 0, 100% 0%, 100% 100%, 0 60.5%)"]}/>
             </Box>
         </Stack>
     );

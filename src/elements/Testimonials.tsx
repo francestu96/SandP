@@ -88,9 +88,11 @@ export default function Testimonials() {
   return (
     <Box>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
-          <Heading color='main'>Cosa dicono di noi</Heading>
-          <Text>Leggi il parere di qualche nostro cliente, grazie ancora!</Text>
+        <Stack spacing={0} align="center" textAlign="center">
+            <Text fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
+                Cosa dicono di Noi
+            </Text>
+          <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
