@@ -14,7 +14,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
       {children}
     <Footer/>
     <Box display={["none", "none", "none", "fixed"]}>
-      <Link href="https://api.whatsapp.com/send?phone=393480944572" target="_blank">
+      <Link href="https://api.whatsapp.com/send?phone=393667748241" target="_blank">
         <Image src="/whatsapp-button.png" position="fixed" bottom="15px" right="15px" alt="wp-logo"/>
       </Link>
     </Box>
