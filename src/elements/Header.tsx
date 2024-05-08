@@ -64,7 +64,7 @@ const Header = () => {
             ))}
           </VStack>
         </Flex>   
-        <Link href="https://api.whatsapp.com/send?phone=393890298500" target="_blank">
+        <Link href="https://api.whatsapp.com/send?phone=393480944572" target="_blank">
           <Image src="/whatsapp-button.png" position="fixed" bottom="15px" right="15px" alt="wp-logo"/>
         </Link>
       </Slide> 

@@ -83,20 +83,20 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Contatti</ListHeader>
-            <Link href={""}>info@spmanagement.com</Link>
-            <Link href={""}>+39 389 0298 500</Link>
+            <Link href={""}>info@spmanagement.house</Link>
+            <Link href={""}>+39 348 094 4572</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Informazioni</ListHeader>
             <Text>Via XX Settembre 20, GE</Text>
-            <Text>P.IVA 03763730102</Text>
+            <Text>P.IVA 03763720102</Text>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Rimani aggiornato</ListHeader>
             <Stack direction={'row'}>
               <Input placeholder={'Indirizzo email'} bg="blackAlpha.100" border={0} _focus={{ bg: 'whiteAlpha.300' }}/>
               <Tooltip label="coming soon!" hasArrow>
-                <IconButton bg="main" aria-label="Subscribe" cursor="not-allowed" icon={<BiMailSend />}/>
+                <IconButton bg="main" color="white" aria-label="Subscribe" cursor="not-allowed" icon={<BiMailSend />}/>
               </Tooltip>
             </Stack>
           </Stack>

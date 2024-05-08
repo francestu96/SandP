@@ -1,4 +1,5 @@
-import { Center, VStack, Text, Image, Stack, chakra, shouldForwardProp, Button, Card, CardBody, CardFooter, Heading } from "@chakra-ui/react";
+import { PhoneIcon } from "@chakra-ui/icons";
+import { Center, VStack, Text, Image, Stack, chakra, shouldForwardProp, Button, Card, CardBody, CardFooter, Heading, Link } from "@chakra-ui/react";
 import { motion, isValidMotionProp, useInView } from 'framer-motion';
 import { useRef } from "react";
 
@@ -35,9 +36,11 @@ const About = () => {
                                     </CardBody>
 
                                     <CardFooter>
-                                        <Button rounded={'full'} bg={'main'} color={'white'} _hover={{ bg: 'main' }}>
-                                            Contatta
-                                        </Button>
+                                        <Link href="tel:3890298501">
+                                            <Button leftIcon={<PhoneIcon/>} rounded={'full'} bg={'main'} color={'white'}  _hover={{ bg: "gray.200", color: "gray.700" }}>
+                                                Chiama
+                                            </Button>
+                                        </Link>
                                     </CardFooter>
                                 </Stack>
                             </Card>
@@ -59,9 +62,11 @@ const About = () => {
                                     </CardBody>
 
                                     <CardFooter>
-                                        <Button rounded={'full'} bg={'main'} color={'white'} _hover={{ bg: 'main' }}>
-                                            Contatta
-                                        </Button>
+                                        <Link href="tel:3480944572">
+                                            <Button leftIcon={<PhoneIcon/>} rounded={'full'} bg={'main'} color={'white'}  _hover={{ bg: "gray.200", color: "gray.700" }}>
+                                                Chiama
+                                            </Button>
+                                        </Link>
                                     </CardFooter>
                                 </Stack>
                                 <Image objectFit='cover' display={["none", "flex"]} w="200px" src='https://images.unsplash.com/photo-1534308143481-c55f00be8bd7' alt='Francesco' borderRadius="full"/>

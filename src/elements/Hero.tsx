@@ -1,4 +1,5 @@
-import { Text, Button, Heading, Stack, Image, Box } from '@chakra-ui/react';
+import { EmailIcon, PhoneIcon } from '@chakra-ui/icons';
+import { Text, Button, Heading, Stack, Image, Box, Link, HStack } from '@chakra-ui/react';
 
 const Hero = () => {
     return (
@@ -18,9 +19,18 @@ const Hero = () => {
                     Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.<br/><br/>
                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices sodales leo at pharetra.
                 </Text>
-                <Button rounded={'full'} bg={'main'} color={'white'} _hover={{ bg: 'main' }}>
-                    Contattaci
-                </Button>
+                <HStack>
+                    <Link href="mailto:info@spmanagement.house">
+                        <Button leftIcon={<EmailIcon/>} rounded={'full'} bg={'main'} color={'white'} _hover={{ bg: "gray.200", color: "gray.700" }}>
+                            Scrivici
+                        </Button>
+                    </Link>
+                    <Link href="tel:3480944572">
+                        <Button leftIcon={<PhoneIcon/>} rounded={'full'} bg={'gray.700'} color={'white'} _hover={{ bg: "gray.200", color: "gray.700" }}>
+                            Chiamaci
+                        </Button>
+                    </Link>
+                </HStack>
             </Stack>
             <Box className="animated-hero-border" w={["100%", "60%"]} display="flex" position="relative" justifyContent="end" clipPath="polygon(0 0, 100% 0%, 100% 100%, 0 60%)">
                 <Image className="animated-hero-img" w="99.2%" h="98%" objectFit="cover" src="hero-bg.png" alt='background' clipPath={["polygon(0 0, 100% 0, 100% 96%, 0 57.5%)", "polygon(0 0, 100% 0%, 100% 100%, 0 60.5%)"]}/>
