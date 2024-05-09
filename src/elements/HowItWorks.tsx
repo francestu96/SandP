@@ -17,9 +17,9 @@ const HowItWorks = () => {
                     <Text textAlign="center" fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                         Come Funziona
                     </Text>
-                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' p="5" borderRadius="2xl" textAlign="center">
+                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' p="5" borderRadius="2xl" textAlign="center" width={["100%", "50%"]}>
                         <Text fontFamily="CustomFont">Una immagine che parla piu di mille parole</Text>
-                        <Image src="/benefit.png"/>
+                        <Image src="/benefit.png" mx={["0", "20"]}/>
                     </Card>
                     <Stack direction={["column", "row"]} ref={ref} textAlign="center">
                         <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut"}} opacity="0">

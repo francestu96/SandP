@@ -105,10 +105,8 @@ export default function Testimonials() {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
-              }
-              name={'Francesco Rosso'}
+              src={"/alessio_rossi.jpg"}
+              name={'Alessio Rossi'}
               title={'Genova, Sturla'}
             />
           </Testimonial>
@@ -120,9 +118,7 @@ export default function Testimonials() {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa'
-              }
+              src={"/giorgia_levi.jpg"}
               name={'Giorgia Levi'}
               title={'Genova, Pegli'}
             />
@@ -135,10 +131,8 @@ export default function Testimonials() {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1534308143481-c55f00be8bd7'
-              }
-              name={'Paolo Giambe'}
+              src={"/luca_grasso.jpg"}
+              name={'Luca Grasso'}
               title={'Genova, Pontedecimo'}
             />
           </Testimonial>
