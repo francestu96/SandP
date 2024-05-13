@@ -1,14 +1,6 @@
 
 import { ReactNode } from 'react';
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Stack,
-  Container,
-  Avatar,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Stack, Container, Avatar } from '@chakra-ui/react';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -16,28 +8,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
-    <Stack
-      bg="gray.100"
-      boxShadow={'lg'}
-      p={8}
-      rounded={'xl'}
-      align={'center'}
-      pos={'relative'}
-      _after={{
-        content: `""`,
-        w: 0,
-        h: 0,
-        borderLeft: 'solid transparent',
-        borderLeftWidth: 16,
-        borderRight: 'solid transparent',
-        borderRightWidth: 16,
-        borderTop: 'solid',
-        borderTopWidth: 16,
-        pos: 'absolute',
-        bottom: '-16px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-      }}>
+    <Stack bg="gray.100" boxShadow={'lg'} p={8} rounded={'xl'} align={'center'} pos={'relative'} _after={{ content: `""`, w: 0, h: 0, borderLeft: 'solid transparent', borderLeftWidth: 16, borderRight: 'solid transparent', borderRightWidth: 16, borderTop: 'solid', borderTopWidth: 16, pos: 'absolute', bottom: '-16px', left: '50%', transform: 'translateX(-50%)' }}>
       {children}
     </Stack>
   );
@@ -53,24 +24,13 @@ const TestimonialHeading = ({ children }: { children: ReactNode }) => {
 
 const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
-    <Text
-      textAlign={'center'}
-      color="gray.600"
-      fontSize={'sm'}>
+    <Text textAlign={'center'} color="gray.600" fontSize={'sm'}>
       {children}
     </Text>
   );
 };
 
-const TestimonialAvatar = ({
-  src,
-  name,
-  title,
-}: {
-  src: string;
-  name: string;
-  title: string;
-}) => {
+const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string}) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
       <Avatar src={src} mb={2} />
@@ -120,7 +80,7 @@ export default function Testimonials() {
             <TestimonialAvatar
               src={"/giorgia_levi.jpg"}
               name={'Giorgia Levi'}
-              title={'Genova, Pegli'}
+              title={'Genova, Centro storico'}
             />
           </Testimonial>
           <Testimonial>
@@ -133,7 +93,7 @@ export default function Testimonials() {
             <TestimonialAvatar
               src={"/luca_grasso.jpg"}
               name={'Luca Grasso'}
-              title={'Genova, Pontedecimo'}
+              title={'Genova, Castelletto'}
             />
           </Testimonial>
         </Stack>

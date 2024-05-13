@@ -11,7 +11,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header/>
-      {children}
+    {children}
     <Footer/>
     <Box display={["none", "none", "none", "fixed"]}>
       <Link href="https://api.whatsapp.com/send?phone=393667748241" target="_blank">

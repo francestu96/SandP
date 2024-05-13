@@ -22,27 +22,27 @@ const HowItWorks = () => {
                         <Image src="/benefit.png" mx={["0", "20"]}/>
                     </Card>
                     <Stack direction={["column", "row"]} ref={ref} textAlign="center">
-                        <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut"}} opacity="0">
+                        <ChakraBox flex="1" animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut"}} opacity="0">
                             <VStack p="5" borderColor="gray.700" borderRadius="2xl">
-                                <Image src="handshake.png" width={["30%", "50%", "70%", "unset"]} alt="img"/>
+                                <Image src="handshake.png" width={["30%", "50%", "30%", "35%", "40%"]} alt="img"/>
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Affidati a noi
                                 </Text>
                                 <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.</Text>
                             </VStack>
                         </ChakraBox>
-                        <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "0.5"}} opacity="0">
+                        <ChakraBox flex="1" animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "0.5"}} opacity="0">
                             <VStack p="5" borderColor="gray.700" borderRadius="2xl">
-                                <Image src="house.png" width={["30%", "50%", "70%", "unset"]} alt="img"/>
+                                <Image src="house.png" width={["30%", "50%", "30%", "35%", "40%"]} alt="img"/>
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Sfrutta i tuoi immobili
                                 </Text>
                                 <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
                             </VStack>
                         </ChakraBox>
-                        <ChakraBox animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "1"}} opacity="0">
+                        <ChakraBox flex="1" animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "1"}} opacity="0">
                             <VStack p="5" borderColor="gray.700" borderRadius="2xl">
-                                <Image src="noworry.png" width={["30%", "50%", "70%", "unset"]} alt="img"/>
+                                <Image src="noworry.png" width={["30%", "50%", "30%", "35%", "40%"]} alt="img"/>
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Nessun impegno da parte tua
                                 </Text>

@@ -1,7 +1,7 @@
-import { Center, VStack, Text, Link, Image, Stack, SimpleGrid, chakra, shouldForwardProp, Box } from "@chakra-ui/react";
+import { Center, VStack, Text, Image, Stack, SimpleGrid, chakra, shouldForwardProp, Box } from "@chakra-ui/react";
 import { motion, isValidMotionProp, useInView } from 'framer-motion';
-import { useRef } from "react";
 import CountUp from 'react-countup';
+import { useRef } from "react";
 
 const Numbers = () => {
     const ref = useRef(null);
