@@ -83,7 +83,7 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Contatti</ListHeader>
-            <Link href={""}>info@spmanagement.house</Link>
+            <Link href={""}>info@spmanagement.solutions</Link>
             <Link href={""}>+39 348 094 4572</Link>
           </Stack>
           <Stack align={'flex-start'}>

@@ -20,7 +20,7 @@ const Hero = () => {
                     Offriamo una valutazione gratuita del vostro immobile, permettendovi di avere una chiara visione del suo potenziale di guadagno.
                 </Text>
                 <HStack>
-                    <Link href="mailto:info@spmanagement.house?subject=Richiesta Valutazione immobile&body=< per cortesia, indicare via dell'immobile, metratura, vani e, ove possibile, qualche fotografia. Grazie >">
+                    <Link href="mailto:info@spmanagement.solutions?subject=Richiesta Valutazione immobile&body=< per cortesia, indicare via dell'immobile, metratura, vani e, ove possibile, qualche fotografia. Grazie >">
                         <Button leftIcon={<EmailIcon/>} rounded={"full"} bg={"main"} color={"white"} _hover={{ bg: "gray.200", color: "gray.700" }}>
                             Valutazione Gratuita
                         </Button>
