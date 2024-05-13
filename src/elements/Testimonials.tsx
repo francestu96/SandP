@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { Box, Flex, Heading, Text, Stack, Container, Avatar } from '@chakra-ui/react';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
-  return <Box>{children}</Box>;
+  return <Box flex="1">{children}</Box>;
 };
 
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
@@ -52,49 +52,37 @@ export default function Testimonials() {
             <Text fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                 Cosa dicono di Noi
             </Text>
-          <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</Text>
+          <Text>Scopri cosa dicono i nostri clienti della loro esperienza con noi!</Text>
         </Stack>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
+        <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Lorem ipsum</TestimonialHeading>
+              <TestimonialHeading>Servizio Impeccabile!</TestimonialHeading>
               <TestimonialText>
-                Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non.
+                Ho affidato la gestione della mia proprietà a S&amp;P Management e non potrei essere più soddisfatto dei risultati. 
+                I ragazzi sono estremamente professionali, efficienti e attenti ai dettagli.
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar
-              src={"/alessio_rossi.jpg"}
-              name={'Alessio Rossi'}
-              title={'Genova, Sturla'}
-            />
+            <TestimonialAvatar src={"/alessio_rossi.jpg"} name={'Alessio Rossi'} title={'Genova, Sturla'} />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Dolor sit amet</TestimonialHeading>
+              <TestimonialHeading>Professionisti Affidabili</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.
+                Sono rimasta impressionata dalla dedizione e dalla competenza dimostrate nella gestione della mia proprietà. 
+                Dalla gestione delle prenotazioni alle pulizie, tutto è stato gestito con professionalità.
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar
-              src={"/giorgia_levi.jpg"}
-              name={'Giorgia Levi'}
-              title={'Genova, Centro storico'}
-            />
+            <TestimonialAvatar src={"/giorgia_levi.jpg"} name={'Giorgia Levi'} title={'Genova, Centro storico'} />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Consectetur adipiscing</TestimonialHeading>
+              <TestimonialHeading>Risultati Eccezionali</TestimonialHeading>
               <TestimonialText>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices sodales leo at pharetra.
+                I gentili ragazzi hanno reso l'affitto della mia proprietà facile e redditizio grazie alla loro attenzione scrupolosa ai dettagli e alla gestione efficiente. 
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar
-              src={"/luca_grasso.jpg"}
-              name={'Luca Grasso'}
-              title={'Genova, Castelletto'}
-            />
+            <TestimonialAvatar src={"/luca_grasso.jpg"} name={'Luca Grasso'} title={'Genova, Castelletto'} />
           </Testimonial>
         </Stack>
       </Container>

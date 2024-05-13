@@ -15,9 +15,9 @@ const Hero = () => {
                     </Text>
                 </Heading>
                 <Text m="2" fontSize={["xs", "s", "md", "lg", "md", "lg"]}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem.<br/><br/>
-                    Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.<br/><br/>
-                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices sodales leo at pharetra.
+                    Se siete stanchi degli affanni legati all'affitto tradizionale e desiderate massimizzare i vostri profitti mentre riducete al minimo i rischi, siete nel posto giusto.<br/><br/>
+                    Con il nostro approccio professionale, non solo potrete godere di rendimenti più consistenti rispetto all'affitto tradizionale, ma eliminerete anche il rischio di morosità e danni agli immobili.<br/><br/>
+                    Offriamo una valutazione gratuita del vostro immobile, permettendovi di avere una chiara visione del suo potenziale di guadagno.
                 </Text>
                 <HStack>
                     <Link href="mailto:info@spmanagement.house?subject=Richiesta Valutazione immobile&body=< per cortesia, indicare via dell'immobile, metratura, vani e, ove possibile, qualche fotografia. Grazie >">

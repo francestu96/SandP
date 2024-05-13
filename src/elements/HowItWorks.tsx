@@ -17,8 +17,8 @@ const HowItWorks = () => {
                     <Text textAlign="center" fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                         Come Funziona
                     </Text>
-                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' p="5" borderRadius="2xl" textAlign="center" width={["100%", "50%"]}>
-                        <Text fontFamily="CustomFont">Una immagine che parla piu di mille parole</Text>
+                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' gap="3" p="5" borderRadius="2xl" textAlign="center" width={["100%", "50%"]}>
+                        <Text fontFamily="CustomFont">Un<Text fontFamily="cursive" fontWeight="bold" as="span">'</Text>immagine che vale pi<Text fontWeight="bold" fontFamily="cursive" as="span">ù</Text> di mille parole</Text>
                         <Image src="/benefit.png" mx={["0", "20"]}/>
                     </Card>
                     <Stack direction={["column", "row"]} ref={ref} textAlign="center">
@@ -28,7 +28,7 @@ const HowItWorks = () => {
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Affidati a noi
                                 </Text>
-                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa dui, porttitor tristique ipsum ac, volutpat viverra quam.</Text>
+                                <Text>Affidati a noi e lascia che il nostro team di esperti si prenda cura delle tue proprietà con totale trasparenza e impegno. Con S&amp;P Management, la gestione immobiliare diventa semplice e sicura.</Text>
                             </VStack>
                         </ChakraBox>
                         <ChakraBox flex="1" animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "0.5"}} opacity="0">
@@ -37,7 +37,7 @@ const HowItWorks = () => {
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Sfrutta i tuoi immobili
                                 </Text>
-                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+                                <Text>Sfrutta al meglio il potenziale del tuo immobile, guadagna senza stress e preoccupazioni, eliminando il rischio di morosità e danni. I tuoi immobili saranno puliti e curati grazie dalle migliori imprese di pulizia che collaborano con noi.</Text>
                             </VStack>
                         </ChakraBox>
                         <ChakraBox flex="1" animate={isInView ? { opacity: [0, 1] } : 'none'} transition={{ duration: "1", ease: "easeInOut", delay: "1"}} opacity="0">
@@ -46,7 +46,7 @@ const HowItWorks = () => {
                                 <Text fontWeight="500" fontSize="2xl" fontFamily="CustomFont" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                                     Nessun impegno da parte tua
                                 </Text>
-                                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio efficitur, finibus quam ac, vestibulum sem. Sed volutpat dictum elit, id gravida nunc aliquam non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum!</Text>
+                                <Text>Ci prendiamo cura di ogni aspetto dal marketing alla pulizia, manutenzione e accoglienza degli ospiti. Non occorre nessun investimenti iniziali per avviare la gestione, valuteremo gratuitamente il tuo immobile per fornirti una stima dei potenziali guadagni.</Text>
                             </VStack>
                         </ChakraBox>
                     </Stack>

@@ -70,7 +70,7 @@ export default function Footer() {
                 </HStack>
             </HStack>
             <Text fontSize={'sm'}>
-              © 2024 S&P Management. All rights reserved
+              © 2024 S&amp;P Management. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Telegram'} href={""}>
@@ -88,7 +88,7 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Informazioni</ListHeader>
-            <Text>Via XX Settembre 20, GE</Text>
+            <Text>Viale Bernabò Brea 57, GE</Text>
             <Text>P.IVA 03763720102</Text>
           </Stack>
           <Stack align={'flex-start'}>
