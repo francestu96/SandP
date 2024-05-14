@@ -17,8 +17,8 @@ const HowItWorks = () => {
                     <Text textAlign="center" fontSize="4xl" fontFamily="CustomFont" px="10" backgroundImage={'linear-gradient(to right, #9945FF, #14F195)'} backgroundClip="text" fill="transparent">
                         Come Funziona
                     </Text>
-                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' gap="3" p="5" borderRadius="2xl" textAlign="center" width={["100%", "50%"]}>
-                        <Text fontFamily="CustomFont">Un<Text fontFamily="cursive" fontWeight="bold" as="span">'</Text>immagine che vale pi<Text fontWeight="bold" fontFamily="cursive" as="span">ù</Text> di mille parole</Text>
+                    <Card boxShadow={'2xl'} backgroundColor="gray.100" variant='outline' gap="3" p="5" borderRadius="2xl" textAlign="center" width={["100%", "90%", "80%", "70%", "60%", "50%"]}>
+                        <Text fontFamily="CustomFont">Un<Text fontFamily="arial" pr="2px" fontWeight="bold" as="span">'</Text>immagine che vale pi<Text fontWeight="bold" fontFamily="arial" as="span">ù</Text> di mille parole</Text>
                         <Image src="/benefit.png" mx={["0", "20"]}/>
                     </Card>
                     <Stack direction={["column", "row"]} ref={ref} textAlign="center">

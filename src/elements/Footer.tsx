@@ -12,7 +12,7 @@ import {
   Tooltip,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaTwitter, FaTelegram } from 'react-icons/fa';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import Logo from './Logo';
 import Link from 'next/link';
@@ -28,23 +28,9 @@ const SocialButton = ({
   href: string;
 }) => {
   return (
-    <chakra.button
-      bg="blackAlpha.100"
-      rounded={'full'}
-      w={8}
-      h={8}
-      cursor={'pointer'}
-      as={'a'}
-      href={href}
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
-      _hover={{
-        bg: "blackAlpha.200",
-      }}>
+    <chakra.button bg="blackAlpha.100" rounded={'full'} w={8} h={8} cursor={'pointer'} as={'a'} href={href} display={'inline-flex'} alignItems={'center'} justifyContent={'center'} transition={'background 0.3s ease'} _hover={{ bg: "blackAlpha.200" }}>
       <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
+        {children}
     </chakra.button>
   );
 };
@@ -73,18 +59,18 @@ export default function Footer() {
               © 2024 S&amp;P Management. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Telegram'} href={""}>
-                <FaTelegram />
+              <SocialButton label={'Instagram'} href={""}>
+                <FaInstagram />
               </SocialButton>
-              <SocialButton label={'Twitter'} href={""}>
-                <FaTwitter />
+              <SocialButton label={'Facebook'} href={""}>
+                <FaFacebook />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Contatti</ListHeader>
-            <Link href={""}>info@spmanagement.solutions</Link>
-            <Link href={""}>+39 348 094 4572</Link>
+            <Link href={"mailto:info@spmanagement.solutions?subject=Richiesta Informazioni"}>info@spmanagement.solutions</Link>
+            <Link href={"tel:3480944572"}>+39 348 094 4572</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Informazioni</ListHeader>

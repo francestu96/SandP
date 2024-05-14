@@ -13,7 +13,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Come funziona il processo di gestione della mia propriet<Text fontFamily="cursive" as="span">à</Text> da parte della tua agenzia<Text as="span" fontFamily="arial">?</Text>
+                  Come funziona il processo di gestione del mio immobile da parte della tua agenzia<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -25,7 +25,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Quali servizi offri per la gestione della mia propriet<Text fontFamily="cursive" as="span">à</Text><Text as="span" fontFamily="arial">?</Text>
+                  Quali servizi offri per la gestione del mio immobile<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -37,7 +37,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Quali vantaggi offre la gestione della mia propriet<Text fontFamily="cursive" as="span">à</Text> attraverso la tua agenzia<Text as="span" fontFamily="arial">?</Text>
+                  Quali vantaggi offre la gestione del mio immobile attraverso la tua agenzia<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -49,7 +49,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Come vengono determinate le tariffe di affitto per la mia propriet<Text fontFamily="cursive" as="span">à</Text><Text as="span" fontFamily="arial">?</Text>
+                  Come vengono determinate le tariffe di affitto per il mio immobile<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -61,7 +61,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Quali sono i costi associati alla gestione della mia propriet<Text fontFamily="cursive" as="span">à</Text><Text as="span" fontFamily="arial">?</Text>
+                  Quali sono i costi associati alla gestione del mio immobile<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -83,7 +83,7 @@ const Faq = () => {
             <AccordionItem>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left' fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} fontFamily="CustomFont">
-                  Come garantisci la sicurezza della mia propriet<Text fontFamily="cursive" as="span">à</Text> e dei miei dati<Text as="span" fontFamily="arial">?</Text>
+                  Come garantisci la sicurezza del mio immobile e dei miei dati<Text as="span" fontFamily="arial">?</Text>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
